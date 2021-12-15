@@ -1,4 +1,5 @@
 import React from 'react';
+import "./assets/css/custom.css";
 export default class App extends React.Component {
     render() {
         return (
@@ -24,8 +25,7 @@ export default class App extends React.Component {
                                         className="external"
                                         title="+templatemo page"
                                         target="_blank"
-                                    >External</a
-                                    >
+                                    >External</a>
                                 </li>
                             </ul>
                         </div>
@@ -107,17 +107,11 @@ export default class App extends React.Component {
                             <div className="row text-center inner">
                                 <div className="col-sm-6">
                                     <div className="blog-content">
-                                        <img src="img/2-1.jpg" alt="Image" />
-                                        <h2>Two Column Left Side</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                                            tempor eros eget eros maximus, ut cursus sem euismod. Donec
-                                            iaculis tristique odio at consectetur. Nullam dignissim varius
-                                            suscipit. Sed in leo sit amet velit finibus pretium.<br /><br />
-                                            Vestibulum vel mauris at erat mattis accumsan et ac lorem.
-                                            Cras non venenatis orci, sed tincidunt massa. Duis nisl
-                                            lectus, auctor eu sodales at, dignissim eu orci. Sed vitae
-                                            venenatis magna, in blandit metus.
+                                        <img src="img/2-1.png" alt="Image" />
+                                        <h2>درخواست جابجایی خودرو</h2>
+                                        <p style={{textAlign:"justify",justifyContent:"right",justifyItems:"right",direction:'rtl'}}>
+                                        حتی اگر شما تمام سعی خود را می کنید که هیچ وقت خودرو خود را در محل نامناسب یا بصورت دوبل یا جلوی درب پارکینگ و یا بطور کلی با مزاحمت برای سایرین پارک ننمایید. همچنان احتمال آن زیاد است که به واسطه پارک سالمی که انجام داده اید و پس از جابجایی خودرو های عقب و جلوی خودرو شما، ماشین های پیرامونتان با پارک در تنگنا مواجه شده و در زمان خروج از پارک به خودرو شما برخورد نموده و ایجاد خسارت هایی مانند ایجاد خوردگی رنگ در سپر یا بعضا شکستگی چراغ خودرو، نمایند زیاد است.
+با استفاده از لیبلهای کارال امکان درخواست جهت جابجایی خودرو را برای سایرین میسر نمایید
                                         </p>
                                         <br />
                                     </div>
