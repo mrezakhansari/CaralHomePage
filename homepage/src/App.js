@@ -13,20 +13,20 @@ export default class App extends React.Component {
                                 <span className="icon-bar"></span>
                             </button>
                         </div>
-                        <div className="single-page-nav sticky-wrapper" id="tmNavbar">
+                        <div  className="single-page-nav sticky-wrapper" id="tmNavbar">
                             <ul className="nav navbar-nav">
-                                <li><a href="#section1">Homepage</a></li>
-                                <li><a href="#section2">About Us</a></li>
-                                <li><a href="#section3">Services</a></li>
-                                <li><a href="#section4">Contact</a></li>
-                                <li>
+                                <li><a href="#section4">تماس با ما</a></li>
+                                <li><a href="#section3">مزایا</a></li>
+                                <li><a href="#section2">درباره ی ما</a></li>
+                                <li><a href="#section1">خانه</a></li>
+                                {/* <li>
                                     <a
                                         href="http://www.google.com/+templatemo"
                                         className="external"
                                         title="+templatemo page"
                                         target="_blank"
                                     >External</a>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
@@ -109,30 +109,23 @@ export default class App extends React.Component {
                                     <div className="blog-content">
                                         <img src="img/2-1.png" alt="Image" />
                                         <h2>درخواست جابجایی خودرو</h2>
-                                        <p style={{textAlign:"justify",justifyContent:"right",justifyItems:"right",direction:'rtl'}}>
-                                        حتی اگر شما تمام سعی خود را می کنید که هیچ وقت خودرو خود را در محل نامناسب یا بصورت دوبل یا جلوی درب پارکینگ و یا بطور کلی با مزاحمت برای سایرین پارک ننمایید. همچنان احتمال آن زیاد است که به واسطه پارک سالمی که انجام داده اید و پس از جابجایی خودرو های عقب و جلوی خودرو شما، ماشین های پیرامونتان با پارک در تنگنا مواجه شده و در زمان خروج از پارک به خودرو شما برخورد نموده و ایجاد خسارت هایی مانند ایجاد خوردگی رنگ در سپر یا بعضا شکستگی چراغ خودرو، نمایند زیاد است.
-با استفاده از لیبلهای کارال امکان درخواست جهت جابجایی خودرو را برای سایرین میسر نمایید
+                                        <p style={{ textAlign: "justify", justifyContent: "right", justifyItems: "right", direction: 'rtl' }}>
+                                            حتی اگر شما تمام سعی خود را می کنید که هیچ وقت خودرو خود را در محل نامناسب یا بصورت دوبل یا جلوی درب پارکینگ و یا بطور کلی با مزاحمت برای سایرین پارک ننمایید. همچنان احتمال آن زیاد است که به واسطه پارک سالمی که انجام داده اید و پس از جابجایی خودرو های عقب و جلوی خودرو شما، ماشین های پیرامونتان با پارک در تنگنا مواجه شده و در زمان خروج از پارک به خودرو شما برخورد نموده و ایجاد خسارت هایی مانند ایجاد خوردگی رنگ در سپر یا بعضا شکستگی چراغ خودرو، نمایند زیاد است.
+                                            با استفاده از لیبلهای کارال امکان درخواست جهت جابجایی خودرو را برای سایرین میسر نمایید
                                         </p>
                                         <br />
                                     </div>
                                 </div>
                                 <div className="col-sm-6">
                                     <div className="blog-content">
-                                        <img src="img/2-2.jpg" alt="Image" />
-                                        <h2>Two Column Right Side</h2>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                                            tempor eros eget eros maximus, ut cursus sem euismod. Donec
-                                            iaculis tristique odio at consectetur. Nullam dignissim varius
-                                            suscipit. Sed in leo sit amet velit finibus pretium.<br /><br />
-                                            Vestibulum vel mauris at erat mattis accumsan et ac lorem.
-                                            Cras non venenatis orci, sed tincidunt massa. Duis nisl
-                                            lectus, auctor eu sodales at, dignissim eu orci. Sed vitae
-                                            venenatis magna, in blandit metus.
+                                        <img src="img/2-2.png" alt="Image" />
+                                        <h2>اعلام آلودگی صدای دزدگیر، نشتی از خودرو، باز بودن درب یا پنجره خودرو</h2>
+                                        <p style={{ textAlign: "justify", justifyContent: "right", justifyItems: "right", direction: 'rtl' }}>
+                                            در این موارد جدای از مشکلاتی مانند آلودگی صوتی ایجاد شده برای سایرین، مشکلاتی از قبیل اتمام شارژ باطری خودرو و یا بالا رفتن ریسک سرغت خودرو یا تجهیزات جانبی آن، نیز برای صاحبان خودرو ایجاد می گردد که افراد می توانند با ارسال یک پیغام ساده مالک خودرو را از ایجاد چنین ضررهایی جلوگیری نمایند.
+                                            همچنین در موارد دیگری مانند تصادف بعد از پارک خودرو یا روشن ماندن چراغ داخل یا بیرون خودرو نیز می توان راننده یا مالک خودرو را از وضعیتهای پیش آمده با استفاده از این ابزار مطلع نمود.
                                         </p>
-                                        <span><a href="#">read more</a></span
-                                        ><br />
-                                        <p id="blofr"></p>
+                                        <br />
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -145,13 +138,14 @@ export default class App extends React.Component {
                             <div className="row">
                                 <div className="col-sm-12 text-center inner our-service">
                                     <div className="service">
-                                        <h1>Our Services</h1>
+                                        <h1>مزایای استفاده از کارال</h1>
                                         <p>
-                                            Nunc diam leo, fringilla vulputate elit lobortis, consectetur
-                                            vestibulum quam. Sed id <br />
-                                            felis ligula. In euismod libero at magna dapibus, in rutrum
-                                            velit lacinia. <br />
-                                            Etiam a mi quis arcu varius condimentum.
+                                        رفع دغدغه های فکری در زمان پارک های نا مناسب <br />
+                                        کاهش چشم گیر درگیری های ناشی از پارک های نا مناسب <br />
+                                        کاهش آلودگی صوتی در محل پارکینگ ها و مکان های عمومی <br />
+                                        امکان ارتقاء جایگاه مسئولیت اجتماعی در حوزه حمل و نقل <br />
+                                        امکان اطلاع رسانی به صاحبان خودرو تنها با استفاده از دوربین گوشی <br/>
+                                        کاهش احتمال ضررهای مالی در زمان حواس پرتی بعد از ترک کردن خودرو <br />
                                         </p>
                                     </div>
                                 </div>
@@ -256,7 +250,7 @@ export default class App extends React.Component {
                             <div className="row">
                                 <div className="col-sm-12 text-center inner">
                                     <div className="contact-content">
-                                        <h1>contact form</h1>
+                                        <h1>تماس با ما</h1>
                                         <div className="row">
                                             <div className="col-sm-12">
                                                 <p>
@@ -274,43 +268,47 @@ export default class App extends React.Component {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <form action="#" method="post" className="contact-form">
-                                        <div className="col-sm-6 contact-form-left">
-                                            <div className="form-group">
-                                                <input
-                                                    name="name"
-                                                    type="text"
-                                                    className="form-control"
-                                                    id="name"
-                                                    placeholder="Name"
-                                                />
-                                                <input
-                                                    type="email"
-                                                    name="email"
-                                                    className="form-control"
-                                                    id="mail"
-                                                    placeholder="Email"
-                                                />
-                                                <input
-                                                    name="subject"
-                                                    type="text"
-                                                    className="form-control"
-                                                    id="subject"
-                                                    placeholder="Subject"
-                                                />
-                                            </div>
-                                        </div>
-                                        <div className="col-sm-6 contact-form-right">
+                                    <div className="col-sm-6 contact-form-left">
                                             <div className="form-group">
                                                 <textarea
                                                     name="message"
                                                     rows="6"
                                                     className="form-control"
                                                     id="comment"
-                                                    placeholder="Your message here..."
+                                                    dir='rtl'
+                                                    placeholder="متن پیام ..."
                                                 ></textarea>
                                                 <button type="submit" className="btn btn-default">Send</button>
                                             </div>
                                         </div>
+                                        <div className="col-sm-6 contact-form-right">
+                                            <div className="form-group">
+                                                <input
+                                                    name="name"
+                                                    type="text"
+                                                    className="form-control"
+                                                    id="name"
+                                                    placeholder="نام و نام خانوادگی"
+                                                    dir='rtl'
+                                                />
+                                                <input
+                                                    type="email"
+                                                    name="email"
+                                                    className="form-control"
+                                                    id="mail"
+                                                    placeholder="آدرس الکترونیکی"
+                                                />
+                                                <input
+                                                    name="subject"
+                                                    type="text"
+                                                    className="form-control"
+                                                    id="subject"
+                                                    placeholder="موضوع"
+                                                    dir='rtl'
+                                                />
+                                            </div>
+                                        </div>
+                                        
                                     </form>
                                 </div>
                             </div>
