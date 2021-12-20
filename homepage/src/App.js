@@ -1,6 +1,16 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 import "./assets/css/custom.css";
+import 'react-toastify/dist/ReactToastify.css';
+import { Check } from 'react-feather';
+
+toast.configure({ bodyClassName: "customFont" });
+
 export default class App extends React.Component {
+    handleSendFeedBack = () => {
+        return toast.success('با سپاس از نظر شما. در اولین فرصت نظر شما به اطلاع همکارانمان خواهد رسید')
+    }
+
     render() {
         return (
             <div>
@@ -13,8 +23,8 @@ export default class App extends React.Component {
                                 <span className="icon-bar"></span>
                             </button>
                         </div>
-                        <div  className="single-page-nav sticky-wrapper" id="tmNavbar">
-                            <ul className="nav navbar-nav">
+                        <div className="single-page-nav sticky-wrapper" id="tmNavbar">
+                            <ul className="nav navbar-nav" dir="rtl">
                                 <li><a href="#section4">تماس با ما</a></li>
                                 <li><a href="#section3">مزایا</a></li>
                                 <li><a href="#section2">درباره ی ما</a></li>
@@ -36,10 +46,11 @@ export default class App extends React.Component {
                     <header id="header-area" className="intro-section">
                         <div className="container">
                             <div className="row">
-                                <div className="col-sm-12 text-center">
+                                <div className="col-sm-12 text-right">
                                     <div className="header-content">
-                                        <h1>CONQUER</h1>
-                                        <h4>Simple Bootstrap Template</h4>
+                                        <h1>کارال</h1>
+                                        <h4 style={{ color: "red" }}>ارتباط با راننده خودرو</h4>
+                                        <h4 style={{ color: "red" }}>با حفظ حریم شخصی</h4>
                                     </div>
                                 </div>
                             </div>
@@ -49,53 +60,18 @@ export default class App extends React.Component {
                 <div id="section2">
                     <section id="feature-area" className="about-section">
                         <div className="container">
-                            <div className="row text-center inner">
-                                <div className="col-sm-4">
-                                    <div className="feature-content">
-                                        <img src="img/1-1.jpg" alt="Image" />
-                                        <h2 className="feature-content-title green-text">
-                                            Bootstrap v3.3.6
-                                        </h2>
-                                        <p className="feature-content-description">
-                                            Morbi sagittis justo a velit placerat ullamcorper quis quis
-                                            velit. Sed convallis at risus ullamcorper auctor. Praesent
-                                            quis velit neque. Quisque semper porta nisi vitae suscipit.
-                                            Duis lectus magna, ornare ac scelerisque.
-                                        </p>
-                                        <a href="#" className="feature-content-link green-btn"
-                                        >button green</a
-                                        >
-                                    </div>
-                                </div>
-                                <div className="col-sm-4">
-                                    <div className="feature-content">
-                                        <img src="img/1-2.jpg" alt="Image" />
-                                        <h2 className="feature-content-title blue-text">
-                                            Responsive Design
-                                        </h2>
-                                        <p className="feature-content-description">
-                                            Conquer Template is provided by templatemo for free of charge.
-                                            You can use this template for any kind of website. No credit
-                                            link is required. All images by
-                                            <a href="http://unsplash.com" target="_parent">Unsplash</a>.
-                                            Thank you for visiting our website. Please come again!
-                                        </p>
-                                        <a href="#" className="feature-content-link blue-btn"
-                                        >See Details</a
-                                        >
-                                    </div>
-                                </div>
-                                <div className="col-sm-4">
-                                    <div className="feature-content">
-                                        <img src="img/1-3.jpg" alt="Image" />
-                                        <h2 className="feature-content-title red-text">Parallax Layout</h2>
-                                        <p className="feature-content-description">
-                                            Morbi sagittis justo a velit placerat ullamcorper quis quis
-                                            velit. Sed convallis at risus ullamcorper auctor. Praesent
-                                            quis velit neque. Quisque semper porta nisi vitae suscipit.
-                                            Duis lectus magna, ornare ac scelerisque.
-                                        </p>
-                                        <a href="#" className="feature-content-link red-btn">Button Red</a>
+                            <div className="row text-center">
+                                <div className="col-lg-12 col-xs-12">
+                                    <div className="tm-box">
+                                        <img src="img/4-5.png" alt="Image" className="img-responsive" />
+                                        <div className="tm-box-description">
+                                            <h2 className="tm-box-p">
+
+                                                شرکت نوآوران مسیر شهر نوین کارا، توسعه دهنده راهکارهای حوزه شهر هوشمند برای شهروندان جهت تسهیل امور و رویه های معمول زندگی
+
+                                            </h2>
+                                            {/* <a href="#" className="content-link">Read More</a> */}
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -125,7 +101,7 @@ export default class App extends React.Component {
                                             همچنین در موارد دیگری مانند تصادف بعد از پارک خودرو یا روشن ماندن چراغ داخل یا بیرون خودرو نیز می توان راننده یا مالک خودرو را از وضعیتهای پیش آمده با استفاده از این ابزار مطلع نمود.
                                         </p>
                                         <br />
-                                        
+
                                     </div>
                                 </div>
                             </div>
@@ -139,14 +115,16 @@ export default class App extends React.Component {
                                 <div className="col-sm-12 text-center inner our-service">
                                     <div className="service">
                                         <h1>مزایای استفاده از کارال</h1>
-                                        <p>
-                                        رفع دغدغه های فکری در زمان پارک های نا مناسب <br />
-                                        کاهش چشم گیر درگیری های ناشی از پارک های نا مناسب <br />
-                                        کاهش آلودگی صوتی در محل پارکینگ ها و مکان های عمومی <br />
-                                        امکان ارتقاء جایگاه مسئولیت اجتماعی در حوزه حمل و نقل <br />
-                                        امکان اطلاع رسانی به صاحبان خودرو تنها با استفاده از دوربین گوشی <br/>
-                                        کاهش احتمال ضررهای مالی در زمان حواس پرتی بعد از ترک کردن خودرو <br />
-                                        </p>
+                                        <div className="row">
+                                            <div className="col-xs-6 col-md-6 col-xs-offset-2 col-md-offset-2">
+                                                <p style={{ textAlign: 'right', color: 'white', direction: 'rtl' }}> <Check color="green" size={20} /> رفع دغدغه های فکری در زمان پارک های نا مناسب </p>
+                                                <p style={{ textAlign: 'right', color: 'white', direction: 'rtl' }}> <Check color="green" size={20} /> کاهش چشم گیر درگیری های ناشی از پارک های نا مناسب </p>
+                                                <p style={{ textAlign: 'right', color: 'white', direction: 'rtl' }}> <Check color="green" size={20} /> کاهش آلودگی صوتی در محل پارکینگ ها و مکان های عمومی </p>
+                                                <p style={{ textAlign: 'right', color: 'white', direction: 'rtl' }}> <Check color="green" size={20} /> امکان ارتقاء جایگاه مسئولیت اجتماعی در حوزه حمل و نقل </p>
+                                                <p style={{ textAlign: 'right', color: 'white', direction: 'rtl' }}> <Check color="green" size={20} /> امکان اطلاع رسانی به صاحبان خودرو تنها با استفاده از دوربین گوشی </p>
+                                                <p style={{ textAlign: 'right', color: 'white', direction: 'rtl' }}> <Check color="green" size={20} /> کاهش احتمال ضررهای مالی در زمان حواس پرتی بعد از ترک کردن خودرو </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -157,88 +135,9 @@ export default class App extends React.Component {
                         <div className="container">
                             <div className="row text-center">
                                 <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                                    <div className="testimonial-content">
-                                        <img src="img/4-1.jpg" alt="Image" />
-                                        <h2>Column One</h2>
-                                        <p>
-                                            Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui
-                                            libero, in tincidunt purus pretium quis. Fusce posuere egestas
-                                            enim eu viverra.
-                                        </p>
-                                        <br />
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                                    <div className="testimonial-content">
-                                        <img src="img/4-2.jpg" alt="Image" />
-                                        <h2>Column Two</h2>
-                                        <p>
-                                            Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui
-                                            libero, in tincidunt purus pretium quis.
-                                        </p>
-                                        <a href="#" className="content-link">read it</a>
-                                        <br />
-                                        <p id="redd"></p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                                    <div className="testimonial-content">
-                                        <img src="img/4-3.jpg" alt="Image" />
-                                        <h2>Column Three</h2>
-                                        <p>
-                                            Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui
-                                            libero, in tincidunt purus pretium quis. Fusce posuere egestas
-                                            enim eu viverra.
-                                        </p>
-                                        <br />
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6 col-xxs-12">
-                                    <div className="testimonial-content">
-                                        <img src="img/4-4.jpg" alt="Image" />
-                                        <h2>Column Four</h2>
-                                        <p>
-                                            Ut ac odio scelerisque ante ornare commodo. Sed faucibus dui
-                                            libero, in tincidunt purus pretium quis.
-                                        </p>
-                                        <a href="#" className="content-link">details</a>
-                                        <br />
-                                        <p id="dets"></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="tm-box">
-                                        <img src="img/4-5.jpg" alt="Image" className="img-responsive" />
-                                        <div className="tm-box-description">
-                                            <h2>One Big Column</h2>
-                                            <p className="tm-box-p">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                                                tempor eros eget eros maximus, ut cursus sem euismod. Donec
-                                                iaculis tristique odio at consectetur. Nullam dignissim
-                                                varius suscipit. Sed in leo sit amet velit finibus pretium.
-                                                Vivamus dictum nisi ac fermentum interdum. Vestibulum vel
-                                                mauris at erat mattis accumsan et ac lorem. Cras non
-                                                venenatis orci, sed tincidunt massa. Duis nisl lectus,
-                                                auctor eu sodales at, dignissim eu orci. Sed vitae venenatis
-                                                magna, in blandit metus. Praesent volutpat cursus rhoncus.
-                                                Aenean arcu diam, suscipit ac neque in, sollicitudin
-                                                convallis orci.
-                                            </p>
-                                            <p className="tm-box-p">
-                                                Fusce eu porta massa, sed tincidunt turpis. Cum sociis
-                                                natoque penatibus et magnis dis parturient montes, nascetur
-                                                ridiculus mus. Vivamus a urna tellus. Integer pharetra vitae
-                                                nisi et lacinia. Morbi sagittis justo a velit placerat
-                                                ullamcorper quis quis velit. Sed convallis at risus
-                                                ullamcorper auctor. Praesent quis velit neque. Quisque
-                                                semper porta nisi vitae suscipit. Duis lectus magna, ornare
-                                                ac scelerisque quis, maximus eget nisi.
-                                            </p>
-                                            <a href="#" className="content-link">Read More</a>
-                                        </div>
-                                    </div>
+                                    {/* <div className="testimonial-content">
+                                        
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
@@ -253,12 +152,9 @@ export default class App extends React.Component {
                                         <h1>تماس با ما</h1>
                                         <div className="row">
                                             <div className="col-sm-12">
-                                                <p>
-                                                    Nunc diam leo, fringilla vulputate elit lobortis,
-                                                    consectetur vestibulum quam. Sed id <br />
-                                                    felis ligula. In euismod libero at magna dapibus, in
-                                                    rutrum velit lacinia. <br />
-                                                    Etiam a mi quis arcu varius condimentum.
+                                                <p style={{ textAlign: "right" }}>
+                                                    ما مشتاق هستیم، از نظرات شما جهت بهبود خدمات و محصولاتمان آگاه شده و در جهت بهبود آنها از دیدگاه شما باخبر شویم.<br />
+                                                    ما را از ارسال نظرات و دیدگاه خود بی بهره ننمایید
                                                 </p>
                                             </div>
                                         </div>
@@ -268,7 +164,7 @@ export default class App extends React.Component {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <form action="#" method="post" className="contact-form">
-                                    <div className="col-sm-6 contact-form-left">
+                                        <div className="col-sm-6 contact-form-left">
                                             <div className="form-group">
                                                 <textarea
                                                     name="message"
@@ -278,7 +174,7 @@ export default class App extends React.Component {
                                                     dir='rtl'
                                                     placeholder="متن پیام ..."
                                                 ></textarea>
-                                                <button type="submit" className="btn btn-default">Send</button>
+                                                <button type="button" onClick={this.handleSendFeedBack} className="btn btn-default">ارسال</button>
                                             </div>
                                         </div>
                                         <div className="col-sm-6 contact-form-right">
@@ -308,7 +204,7 @@ export default class App extends React.Component {
                                                 />
                                             </div>
                                         </div>
-                                        
+
                                     </form>
                                 </div>
                             </div>
@@ -321,23 +217,25 @@ export default class App extends React.Component {
                         <div className="row text-center">
                             <div className="col-sm-12">
                                 <div className="footer-content">
-                                    <h1>Use it free!</h1>
+                                    <h1>آدرس ما</h1>
                                     <p>
-                                        “Conquer is free Bootstrap template from templatemo website.
-                                        <br />No backlink is required to use this layout.”
+                                        “تهران ، تهرانپارس، خیابان 196
+                                        غربی، پلاک 190 واحد 5
+                                        شماره تماس 021-77291340
+                                        شماره همراه: 09903838648”
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <hr />
-                    <div className="container">
+                    {/* <div className="container">
                         <div className="row">
                             <div className="col-sm-12 text-center">
                                 <p className="copy">Copyright © 2084 Your Company Name</p>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </footer>
 
             </div>

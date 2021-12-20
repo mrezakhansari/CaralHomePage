@@ -34,6 +34,11 @@
     font-family: 'sans' !important;
 }
 
-h2{
+h2, h4, h1{
     font-family: 'sans_medium' !important;
+}
+
+.customFont{
+  font-family: 'sans' !important;
+  direction: rtl;
 }
