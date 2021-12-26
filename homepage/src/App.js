@@ -3,6 +3,7 @@ import { toast } from 'react-toastify';
 import "./assets/css/custom.css";
 import 'react-toastify/dist/ReactToastify.css';
 import { Check } from 'react-feather';
+import { BrowserRouter, Link, NavLink, Router, Route, Routes, Redirect } from 'react-router-dom';
 
 toast.configure({ bodyClassName: "customFont" });
 
@@ -25,18 +26,39 @@ export default class App extends React.Component {
                         </div>
                         <div className="single-page-nav sticky-wrapper" id="tmNavbar">
                             <ul className="nav navbar-nav" dir="rtl">
-                                <li><a href="#section4">تماس با ما</a></li>
+                                <li>
+                                    <a
+                                        href="http://caralapp.ir/registerDriver"
+                                        className="external"
+                                        title="سفارش"
+                                        target="_blank"
+                                    >سفارش محصول</a>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="#section4">
+                                        تماس با ما
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="#section3">
+                                        مزایا
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="#section2">
+                                        درباره ی ما
+                                    </NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink className="nav-link" to="#section1">
+                                        خانه
+                                    </NavLink>
+                                </li>
+                                {/* <li><a href="#section4">تماس با ما</a></li>
                                 <li><a href="#section3">مزایا</a></li>
                                 <li><a href="#section2">درباره ی ما</a></li>
-                                <li><a href="#section1">خانه</a></li>
-                                {/* <li>
-                                    <a
-                                        href="http://www.google.com/+templatemo"
-                                        className="external"
-                                        title="+templatemo page"
-                                        target="_blank"
-                                    >External</a>
-                                </li> */}
+                                <li><a href="#section1">خانه</a></li> */}
+
                             </ul>
                         </div>
                     </div>
@@ -237,7 +259,6 @@ export default class App extends React.Component {
                         </div>
                     </div> */}
                 </footer>
-
             </div>
         );
     }
